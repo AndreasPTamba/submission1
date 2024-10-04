@@ -5,7 +5,7 @@ import seaborn as sns
 
 # Attempt to read the CSV file
 try:
-    df = pd.read_csv('./main_data.csv')
+    df = pd.read_csv('dashboard/main_data.csv')
 except FileNotFoundError:
     st.error("The file 'main_data.csv' was not found. Please ensure it is in the correct directory.")
     # Optionally stop further execution
