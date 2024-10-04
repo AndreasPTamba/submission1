@@ -3,8 +3,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Sample data loading
-df = pd.read_csv('./main_data.csv')
+# Attempt to read the CSV file
+try:
+    df = pd.read_csv('./main_data.csv')
+except FileNotFoundError:
+    st.error("The file 'main_data.csv' was not found. Please ensure it is in the correct directory.")
+    # Optionally stop further execution
+    st.stop()
 
 # Create a pivot table for monthly averages
 monthly_avg = df.pivot_table(index='month', 
