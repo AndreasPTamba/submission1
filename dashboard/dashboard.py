@@ -3,6 +3,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+# Add a sidebar
+st.sidebar.title("Dashboard Information")
+st.sidebar.header("ML-05 | Andreas Panangian Tamba")
+st.sidebar.markdown("This dashboard presents an analysis of air quality data, showing trends, comparisons, and relationships between different pollutants and environmental factors like rainfall and temperature.")
+
 # Streamlit app title
 st.title('Air Quality Data Dashboard: Visualizing Pollution Trends and Environmental Factors')
 
