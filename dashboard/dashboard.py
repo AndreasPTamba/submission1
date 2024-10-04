@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Sample data loading
-df = pd.read_csv('main_data.csv')
+df = pd.read_csv('/main_data.csv')
 
 # Create a pivot table for monthly averages
 monthly_avg = df.pivot_table(index='month', 
